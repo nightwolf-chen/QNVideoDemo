@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PBJVision.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Qiniu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SCRecorder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -21,6 +31,32 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>0935F128FC9C720E11C61875</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DFB15EA80A9B5EF6CFC9021</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>605C9971141F7DC61E08594C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AAD2710E27592997F37A71A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB8F184B6F77642F7DBD22FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

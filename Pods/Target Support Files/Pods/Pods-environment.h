@@ -48,10 +48,22 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 2
 
+// PBJVision
+#define COCOAPODS_POD_AVAILABLE_PBJVision
+#define COCOAPODS_VERSION_MAJOR_PBJVision 0
+#define COCOAPODS_VERSION_MINOR_PBJVision 4
+#define COCOAPODS_VERSION_PATCH_PBJVision 0
+
 // Qiniu
 #define COCOAPODS_POD_AVAILABLE_Qiniu
 // This library does not follow semantic-versioning,
 // so we were not able to define version macros.
 // Please contact the author.
 // Version: 7.0.9.1.
+
+// SCRecorder
+#define COCOAPODS_POD_AVAILABLE_SCRecorder
+#define COCOAPODS_VERSION_MAJOR_SCRecorder 2
+#define COCOAPODS_VERSION_MINOR_SCRecorder 3
+#define COCOAPODS_VERSION_PATCH_SCRecorder 1
 

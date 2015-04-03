@@ -15,6 +15,7 @@
 		DFFB667D1AC99AD7008350D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFB667C1AC99AD7008350D7 /* Images.xcassets */; };
 		DFFB66801AC99AD7008350D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFB667E1AC99AD7008350D7 /* LaunchScreen.xib */; };
 		DFFB668C1AC99AD7008350D7 /* QNVideoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB668B1AC99AD7008350D7 /* QNVideoDemoTests.m */; };
+		DFFB66961ACADEA7008350D7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFB66951ACADEA7008350D7 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DFFB66851AC99AD7008350D7 /* QNVideoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QNVideoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFB668A1AC99AD7008350D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFFB668B1AC99AD7008350D7 /* QNVideoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNVideoDemoTests.m; sourceTree = "<group>"; };
+		DFFB66951ACADEA7008350D7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFB66961ACADEA7008350D7 /* MediaPlayer.framework in Frameworks */,
 				2AA2E366F58DE5B734C7781F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +71,7 @@
 		703187CE062F1F1196011764 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFFB66951ACADEA7008350D7 /* MediaPlayer.framework */,
 				D91E50440869E77308CDDAC5 /* libPods.a */,
 			);
 			name = Frameworks;
