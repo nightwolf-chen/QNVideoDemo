@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1280CFF41ACF8CCF00CE8C70 /* libOSS_IOS_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1280CFE81ACF8CCF00CE8C70 /* libOSS_IOS_SDK.a */; };
+		1280CFF81ACF8E5C00CE8C70 /* JDVideoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1280CFF71ACF8E5C00CE8C70 /* JDVideoUtil.m */; };
+		1280CFFB1ACF8E8200CE8C70 /* JDVidoUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1280CFFA1ACF8E8200CE8C70 /* JDVidoUploader.m */; };
+		1280CFFE1ACF8F3F00CE8C70 /* JDVideoDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1280CFFD1ACF8F3F00CE8C70 /* JDVideoDownloader.m */; };
+		1280D0021ACF8FD300CE8C70 /* JDCloudService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1280D0011ACF8FD300CE8C70 /* JDCloudService.m */; };
+		1280D0051ACF91B800CE8C70 /* JDCloudSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1280D0041ACF91B800CE8C70 /* JDCloudSecurity.m */; };
+		1280D0081ACF923A00CE8C70 /* JDCloudResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1280D0071ACF923A00CE8C70 /* JDCloudResource.m */; };
+		12EFC8011ACFCB8600A6A943 /* JDVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC8001ACFCB8600A6A943 /* JDVideoSource.m */; };
+		12EFC8041ACFCDC000A6A943 /* JDVideoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC8031ACFCDC000A6A943 /* JDVideoInfo.m */; };
+		12EFC80A1ACFDA1100A6A943 /* JDCloudData.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC8091ACFDA1100A6A943 /* JDCloudData.m */; };
+		12EFC80D1ACFE05400A6A943 /* JDCloudTestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC80C1ACFE05400A6A943 /* JDCloudTestor.m */; };
 		2AA2E366F58DE5B734C7781F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D91E50440869E77308CDDAC5 /* libPods.a */; };
 		DFFB66721AC99AD7008350D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB66711AC99AD7008350D7 /* main.m */; };
 		DFFB66751AC99AD7008350D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB66741AC99AD7008350D7 /* AppDelegate.m */; };
@@ -29,6 +40,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1280CFE81ACF8CCF00CE8C70 /* libOSS_IOS_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOSS_IOS_SDK.a; sourceTree = "<group>"; };
+		1280CFE91ACF8CCF00CE8C70 /* OSSArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSArgs.h; sourceTree = "<group>"; };
+		1280CFEA1ACF8CCF00CE8C70 /* OSSBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSBucket.h; sourceTree = "<group>"; };
+		1280CFEB1ACF8CCF00CE8C70 /* OSSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSClient.h; sourceTree = "<group>"; };
+		1280CFEC1ACF8CCF00CE8C70 /* OSSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSData.h; sourceTree = "<group>"; };
+		1280CFED1ACF8CCF00CE8C70 /* OSSFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSFile.h; sourceTree = "<group>"; };
+		1280CFEE1ACF8CCF00CE8C70 /* OSSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSLog.h; sourceTree = "<group>"; };
+		1280CFEF1ACF8CCF00CE8C70 /* OSSMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSMeta.h; sourceTree = "<group>"; };
+		1280CFF01ACF8CCF00CE8C70 /* OSSMultipart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSMultipart.h; sourceTree = "<group>"; };
+		1280CFF11ACF8CCF00CE8C70 /* OSSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSObject.h; sourceTree = "<group>"; };
+		1280CFF21ACF8CCF00CE8C70 /* OSSRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSRange.h; sourceTree = "<group>"; };
+		1280CFF31ACF8CCF00CE8C70 /* OSSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSTool.h; sourceTree = "<group>"; };
+		1280CFF61ACF8E5C00CE8C70 /* JDVideoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVideoUtil.h; sourceTree = "<group>"; };
+		1280CFF71ACF8E5C00CE8C70 /* JDVideoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVideoUtil.m; sourceTree = "<group>"; };
+		1280CFF91ACF8E8200CE8C70 /* JDVidoUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVidoUploader.h; sourceTree = "<group>"; };
+		1280CFFA1ACF8E8200CE8C70 /* JDVidoUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVidoUploader.m; sourceTree = "<group>"; };
+		1280CFFC1ACF8F3F00CE8C70 /* JDVideoDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVideoDownloader.h; sourceTree = "<group>"; };
+		1280CFFD1ACF8F3F00CE8C70 /* JDVideoDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVideoDownloader.m; sourceTree = "<group>"; };
+		1280D0001ACF8FD300CE8C70 /* JDCloudService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCloudService.h; sourceTree = "<group>"; };
+		1280D0011ACF8FD300CE8C70 /* JDCloudService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCloudService.m; sourceTree = "<group>"; };
+		1280D0031ACF91B800CE8C70 /* JDCloudSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCloudSecurity.h; sourceTree = "<group>"; };
+		1280D0041ACF91B800CE8C70 /* JDCloudSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCloudSecurity.m; sourceTree = "<group>"; };
+		1280D0061ACF923A00CE8C70 /* JDCloudResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCloudResource.h; sourceTree = "<group>"; };
+		1280D0071ACF923A00CE8C70 /* JDCloudResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCloudResource.m; sourceTree = "<group>"; };
+		12EFC7FF1ACFCB8600A6A943 /* JDVideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVideoSource.h; sourceTree = "<group>"; };
+		12EFC8001ACFCB8600A6A943 /* JDVideoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVideoSource.m; sourceTree = "<group>"; };
+		12EFC8021ACFCDC000A6A943 /* JDVideoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDVideoInfo.h; sourceTree = "<group>"; };
+		12EFC8031ACFCDC000A6A943 /* JDVideoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDVideoInfo.m; sourceTree = "<group>"; };
+		12EFC8081ACFDA1100A6A943 /* JDCloudData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCloudData.h; sourceTree = "<group>"; };
+		12EFC8091ACFDA1100A6A943 /* JDCloudData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCloudData.m; sourceTree = "<group>"; };
+		12EFC80B1ACFE05400A6A943 /* JDCloudTestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCloudTestor.h; sourceTree = "<group>"; };
+		12EFC80C1ACFE05400A6A943 /* JDCloudTestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCloudTestor.m; sourceTree = "<group>"; };
 		65FAA7E66C349A6F343B6585 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D55135DD8BAD0950C7B94B22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D91E50440869E77308CDDAC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +98,7 @@
 			files = (
 				DFFB66961ACADEA7008350D7 /* MediaPlayer.framework in Frameworks */,
 				2AA2E366F58DE5B734C7781F /* libPods.a in Frameworks */,
+				1280CFF41ACF8CCF00CE8C70 /* libOSS_IOS_SDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,9 +112,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1280CFE71ACF8CCF00CE8C70 /* Release-iPhoneOS */ = {
+			isa = PBXGroup;
+			children = (
+				1280CFE81ACF8CCF00CE8C70 /* libOSS_IOS_SDK.a */,
+				1280CFE91ACF8CCF00CE8C70 /* OSSArgs.h */,
+				1280CFEA1ACF8CCF00CE8C70 /* OSSBucket.h */,
+				1280CFEB1ACF8CCF00CE8C70 /* OSSClient.h */,
+				1280CFEC1ACF8CCF00CE8C70 /* OSSData.h */,
+				1280CFED1ACF8CCF00CE8C70 /* OSSFile.h */,
+				1280CFEE1ACF8CCF00CE8C70 /* OSSLog.h */,
+				1280CFEF1ACF8CCF00CE8C70 /* OSSMeta.h */,
+				1280CFF01ACF8CCF00CE8C70 /* OSSMultipart.h */,
+				1280CFF11ACF8CCF00CE8C70 /* OSSObject.h */,
+				1280CFF21ACF8CCF00CE8C70 /* OSSRange.h */,
+				1280CFF31ACF8CCF00CE8C70 /* OSSTool.h */,
+			);
+			path = "Release-iPhoneOS";
+			sourceTree = "<group>";
+		};
+		1280CFF51ACF8DFC00CE8C70 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				12EFC7FF1ACFCB8600A6A943 /* JDVideoSource.h */,
+				12EFC8001ACFCB8600A6A943 /* JDVideoSource.m */,
+				12EFC8021ACFCDC000A6A943 /* JDVideoInfo.h */,
+				12EFC8031ACFCDC000A6A943 /* JDVideoInfo.m */,
+				1280CFF61ACF8E5C00CE8C70 /* JDVideoUtil.h */,
+				1280CFF71ACF8E5C00CE8C70 /* JDVideoUtil.m */,
+				1280CFF91ACF8E8200CE8C70 /* JDVidoUploader.h */,
+				1280CFFA1ACF8E8200CE8C70 /* JDVidoUploader.m */,
+				1280CFFC1ACF8F3F00CE8C70 /* JDVideoDownloader.h */,
+				1280CFFD1ACF8F3F00CE8C70 /* JDVideoDownloader.m */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		1280CFFF1ACF8F7500CE8C70 /* cloud storege */ = {
+			isa = PBXGroup;
+			children = (
+				12EFC8081ACFDA1100A6A943 /* JDCloudData.h */,
+				12EFC8091ACFDA1100A6A943 /* JDCloudData.m */,
+				1280D0001ACF8FD300CE8C70 /* JDCloudService.h */,
+				1280D0011ACF8FD300CE8C70 /* JDCloudService.m */,
+				1280D0061ACF923A00CE8C70 /* JDCloudResource.h */,
+				1280D0071ACF923A00CE8C70 /* JDCloudResource.m */,
+				1280D0031ACF91B800CE8C70 /* JDCloudSecurity.h */,
+				1280D0041ACF91B800CE8C70 /* JDCloudSecurity.m */,
+				12EFC80B1ACFE05400A6A943 /* JDCloudTestor.h */,
+				12EFC80C1ACFE05400A6A943 /* JDCloudTestor.m */,
+			);
+			path = "cloud storege";
+			sourceTree = "<group>";
+		};
 		703187CE062F1F1196011764 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1280CFE71ACF8CCF00CE8C70 /* Release-iPhoneOS */,
 				DFFB66951ACADEA7008350D7 /* MediaPlayer.framework */,
 				D91E50440869E77308CDDAC5 /* libPods.a */,
 			);
@@ -100,6 +198,8 @@
 		DFFB666E1AC99AD7008350D7 /* QNVideoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1280CFFF1ACF8F7500CE8C70 /* cloud storege */,
+				1280CFF51ACF8DFC00CE8C70 /* video */,
 				DFFB66731AC99AD7008350D7 /* AppDelegate.h */,
 				DFFB66741AC99AD7008350D7 /* AppDelegate.m */,
 				DFFB66761AC99AD7008350D7 /* ViewController.h */,
@@ -283,8 +383,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFFB66781AC99AD7008350D7 /* ViewController.m in Sources */,
+				1280D0051ACF91B800CE8C70 /* JDCloudSecurity.m in Sources */,
+				12EFC8041ACFCDC000A6A943 /* JDVideoInfo.m in Sources */,
 				DFFB66751AC99AD7008350D7 /* AppDelegate.m in Sources */,
+				1280D0021ACF8FD300CE8C70 /* JDCloudService.m in Sources */,
+				1280CFFE1ACF8F3F00CE8C70 /* JDVideoDownloader.m in Sources */,
 				DFFB66721AC99AD7008350D7 /* main.m in Sources */,
+				1280D0081ACF923A00CE8C70 /* JDCloudResource.m in Sources */,
+				12EFC80D1ACFE05400A6A943 /* JDCloudTestor.m in Sources */,
+				1280CFF81ACF8E5C00CE8C70 /* JDVideoUtil.m in Sources */,
+				12EFC8011ACFCB8600A6A943 /* JDVideoSource.m in Sources */,
+				1280CFFB1ACF8E8200CE8C70 /* JDVidoUploader.m in Sources */,
+				12EFC80A1ACFDA1100A6A943 /* JDCloudData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +520,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QNVideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Release-iPhoneOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -421,7 +536,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QNVideoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Release-iPhoneOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

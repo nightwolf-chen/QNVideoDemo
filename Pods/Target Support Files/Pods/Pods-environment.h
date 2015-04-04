@@ -61,9 +61,3 @@
 // Please contact the author.
 // Version: 7.0.9.1.
 
-// SCRecorder
-#define COCOAPODS_POD_AVAILABLE_SCRecorder
-#define COCOAPODS_VERSION_MAJOR_SCRecorder 2
-#define COCOAPODS_VERSION_MINOR_SCRecorder 3
-#define COCOAPODS_VERSION_PATCH_SCRecorder 1
-

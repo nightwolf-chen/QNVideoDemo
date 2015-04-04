@@ -23,17 +23,14 @@ PODS:
   - PBJVision (0.4.0)
   - Qiniu (7.0.9.1):
     - AFNetworking (~> 2.0)
-  - SCRecorder (2.3.1)
 
 DEPENDENCIES:
   - PBJVision
   - Qiniu (~> 7.0)
-  - SCRecorder
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
   PBJVision: aa3d9f584324e099898fb83977a815f0ecb7ba5a
   Qiniu: cd281425298a3f30495135ab9a9442bf400dab28
-  SCRecorder: 8ed33007a1dca0392d1d33b4cf76aceb09724de4
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.35.0

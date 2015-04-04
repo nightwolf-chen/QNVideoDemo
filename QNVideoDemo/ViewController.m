@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 #import <MediaPlayer/MediaPlayer.h>
-#import <SCRecorder.h>
 
 @interface ViewController ()
 

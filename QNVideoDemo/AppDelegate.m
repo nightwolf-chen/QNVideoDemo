@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "JDCloudService.h"
+#import "JDCloudTestor.h"
+
+
 
 @interface AppDelegate ()
 
@@ -17,6 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [JDCloudService sharedService];
+    
+    [JDCloudTestor testUpload];
+    
     return YES;
 }
 
