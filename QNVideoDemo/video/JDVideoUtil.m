@@ -16,5 +16,10 @@
     return [NSString stringWithFormat:@"%@%@",info.name,info.vid];
 }
 
++ (NSString *)filePathForInfo:(JDVideoInfo *)info
+{
+    return @"TODO:filepath";
+}
+
 
 @end

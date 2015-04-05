@@ -8,11 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@class JDVideoSource;
+
 @interface JDVideoInfo : NSObject
 
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,copy) NSString *vid;
 @property (nonatomic,copy) NSString *userId;
+@property (nonatomic,copy) NSString *filePath;
 @property (nonatomic,copy) NSDate *createTime;
+
+- (id)initWithUserId:(NSString *)userId;
+
 
 @end

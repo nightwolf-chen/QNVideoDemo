@@ -7,7 +7,19 @@
 //
 
 #import "JDVideoInfo.h"
+#import "JDVideoSource.h"
 
 @implementation JDVideoInfo
+
+- (id)initWithUserId:(NSString *)userId
+{
+    if (self = [super init]) {
+        _userId = userId;
+        _createTime = [NSDate date];
+    }
+    
+    return self;
+}
+
 
 @end

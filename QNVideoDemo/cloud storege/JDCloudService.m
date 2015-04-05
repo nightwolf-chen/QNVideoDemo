@@ -11,8 +11,11 @@
 #import "JDCloudSecurity.h"
 #import "OSSTool.h"
 #import "OSSData.h"
+#import "OSSFile.h"
 #import "JDCloudData.h"
 #import "JDCloudResource.h"
+
+static NSString *const kDefaultEndpoit = @"oss-cn-shenzhen.aliyuncs.com";
 
 @implementation JDCloudService
 
@@ -30,14 +33,15 @@
 - (id)_init
 {
     if (self = [super init]){
-        [OSSClient sharedInstanceManage].globalDefaultBucketHostId = @"oss-cn-shenzhen.aliyuncs.com";
+        
+        [OSSClient sharedInstanceManage].globalDefaultBucketHostId = kDefaultEndpoit;
+        
         [[OSSClient sharedInstanceManage] setGenerateToken:^(NSString *method,
                                                              NSString *md5,
                                                              NSString *type,
                                                              NSString *date,
                                                              NSString *xoss,
                                                              NSString *resource){
-            
             NSString *signature = nil;
             JDCloudSecurity *security = [JDCloudSecurity defaultSecurity];
             NSString *content = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@%@", method, md5, type, date, xoss, resource];
@@ -49,6 +53,7 @@
             return signature;
             
         }];
+        
     }
     
     return self;
@@ -56,11 +61,28 @@
 
 - (void)uploadWithData:(JDCloudData *)data
         UploadCallback:(void (^)(BOOL, NSError *))uploadCallback
-  withProgressCallback:(void (^)(float))progressCallback
-{
-    OSSData *ossData = [[OSSData alloc] initWithBucket:data.cloudResource.bucket withKey:data.cloudResource.keyName];
-    [ossData setData:data.data withType:data.contentType];
-    [ossData uploadWithUploadCallback:uploadCallback withProgressCallback:progressCallback];
+  withProgressCallback:(void (^)(float))progressCallback{
+    
+    if (data.filePath){
+        
+        OSSFile *ossFile = [[OSSFile alloc] initWithBucket:data.cloudResource.bucket withKey:data.cloudResource.keyName];
+        [ossFile setPath:data.filePath withContentType:data.contentType];
+        [ossFile uploadWithUploadCallback:uploadCallback withProgressCallback:progressCallback];
+        
+        
+    }else if (data.data) {
+        
+        OSSData *ossData = [[OSSData alloc] initWithBucket:data.cloudResource.bucket withKey:data.cloudResource.keyName];
+        [ossData setData:data.data withType:data.contentType];
+        [ossData uploadWithUploadCallback:uploadCallback withProgressCallback:progressCallback];
+        
+    }else{
+        NSLog(@"No data to upload!");
+    }
+    
+    
 }
+
+
 
 @end

@@ -7,10 +7,22 @@
 //
 
 #import "ViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "PBJViewController.h"
 
+#import <PBJVision.h>
 #import <MediaPlayer/MediaPlayer.h>
 
-@interface ViewController ()
+#import "JDVideoInfo.h"
+#import "JDVideoSource.h"
+#import "JDCloudData.h"
+#import "JDCloudService.h"
+
+@interface ViewController ()<PBJViewControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *previewImageView;
+
+@property (nonatomic,copy) NSString *currentVideoFilePath;
+@property (nonatomic,strong) UIImage *currentThumbnailImage;
 
 @end
 
@@ -18,46 +30,84 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 }
-- (IBAction)showButton:(id)sender {
-    [self showMoviewPlayer];
-}
-
-- (void)showMoviewPlayer
-{
-    NSURL *url = [NSURL URLWithString:@"http://nirvawolf.oss-cn-shenzhen.aliyuncs.com/IMG_1081.mp4"];
-    MPMoviePlayerViewController *aMovieViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
-    [self presentMoviePlayerViewControllerAnimated:aMovieViewController];
-    
-    // Create the recorder
-//    SCRecorder *recorder = [SCRecorder recorder]; // You can also use +[SCRecorder sharedRecorder]
-    
-//    // Start running the flow of buffers
-//    if (![recorder startRunning]) {
-//        NSLog(@"Something wrong there: %@", recorder.error);
-//    }
-//    
-//    // Create a new session and set it to the recorder
-//    recorder.session = [SCRecordSession recordSession];
-//    
-//    // Begin appending video/audio buffers to the session
-//    [recorder record];
-//    
-//    // Stop appending video/audio buffers to the session
-//    [recorder pause];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)showMoviewPlayer:(NSURL *)url
+{
+    MPMoviePlayerViewController *viewController = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
+    [self presentMoviePlayerViewControllerAnimated:viewController];
+}
+
+- (JDCloudData *)videoData:(NSString *)videoPath
+{
+    JDVideoInfo *videoInfo = [[JDVideoInfo alloc] initWithUserId:@"testor"];
+    videoInfo.filePath = videoPath;
+    videoInfo.name = @"testor";
+    videoInfo.vid = @"testor";
+    
+    JDVideoSource *videoSource = [JDVideoSource videoSource:videoInfo];
+    
+    JDCloudData *cloudData = [[JDCloudData alloc] init];
+    cloudData.filePath = videoPath;
+    cloudData.cloudResource = videoSource;
+    cloudData.contentType = @"video/mp4";
+    
+    return cloudData;
+}
+
+#pragma mark - Button clicked events
+- (IBAction)playLocalFileClicked:(id)sender {
+    NSURL *url = [NSURL fileURLWithPath:_currentVideoFilePath];
+    [self showMoviewPlayer:url];
+}
+
+- (IBAction)playOnlineFileClicked:(id)sender {
+    JDCloudData *cloudData = [self videoData:_currentVideoFilePath];
+    NSString *fileUrl = [cloudData.cloudResource getRerouceUrl];
+    NSURL *url = [NSURL URLWithString:fileUrl];
+    [self showMoviewPlayer:url];
+}
+
+- (IBAction)uploadFile:(id)sender {
+    
+    JDCloudData *cloudData = [self videoData:_currentVideoFilePath];
+    
+    [[JDCloudService sharedService] uploadWithData:cloudData UploadCallback:^(BOOL suc,NSError *err){
+        if (suc) {
+            NSLog(@"Video has been sent!");
+        }else{
+            NSLog(@"Video fail to upload %@",err);
+        }
+    } withProgressCallback:^(float percent){
+        NSLog(@"video is uploading :%.2f",percent);
+    }];
+    
+}
+
+- (IBAction)showButton:(id)sender {
+    PBJViewController *pbjViewControler = [[PBJViewController alloc] init];
+    pbjViewControler.delegate = self;
+    [self presentViewController:pbjViewControler animated:YES completion:^{}];
+}
+
+#pragma mark - PBJViewControllerDelegate
+- (void)pbj_viewController:(PBJViewController *)vision capturedVideo:(NSDictionary *)videoDict error:(NSError *)error
+{
+    NSString *videoPath = [videoDict  objectForKey:PBJVisionVideoPathKey];
+    self.currentVideoFilePath = videoPath;
+    self.currentThumbnailImage  = videoDict[PBJVisionVideoThumbnailKey];
+    
+    _previewImageView.image = _currentThumbnailImage;
 }
 
 @end

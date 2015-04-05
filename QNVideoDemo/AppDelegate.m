@@ -23,7 +23,7 @@
     // Override point for customization after application launch.
     [JDCloudService sharedService];
     
-    [JDCloudTestor testUpload];
+//    [JDCloudTestor testUpload];
     
     return YES;
 }

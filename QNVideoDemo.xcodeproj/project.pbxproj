@@ -18,6 +18,19 @@
 		12EFC8041ACFCDC000A6A943 /* JDVideoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC8031ACFCDC000A6A943 /* JDVideoInfo.m */; };
 		12EFC80A1ACFDA1100A6A943 /* JDCloudData.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC8091ACFDA1100A6A943 /* JDCloudData.m */; };
 		12EFC80D1ACFE05400A6A943 /* JDCloudTestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC80C1ACFE05400A6A943 /* JDCloudTestor.m */; };
+		12EFC8151AD0D80100A6A943 /* PBJFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC8101AD0D80100A6A943 /* PBJFocusView.m */; };
+		12EFC8161AD0D80100A6A943 /* PBJStrobeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC8121AD0D80100A6A943 /* PBJStrobeView.m */; };
+		12EFC8171AD0D80100A6A943 /* PBJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12EFC8141AD0D80100A6A943 /* PBJViewController.m */; };
+		12EFC8231AD0D80F00A6A943 /* capture_done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC8191AD0D80F00A6A943 /* capture_done@2x.png */; };
+		12EFC8241AD0D80F00A6A943 /* capture_flip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC81A1AD0D80F00A6A943 /* capture_flip@2x.png */; };
+		12EFC8251AD0D80F00A6A943 /* capture_focus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC81B1AD0D80F00A6A943 /* capture_focus@2x.png */; };
+		12EFC8261AD0D80F00A6A943 /* capture_focus_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC81C1AD0D80F00A6A943 /* capture_focus_button@2x.png */; };
+		12EFC8271AD0D80F00A6A943 /* capture_focus_button_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC81D1AD0D80F00A6A943 /* capture_focus_button_active@2x.png */; };
+		12EFC8281AD0D80F00A6A943 /* capture_onion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC81E1AD0D80F00A6A943 /* capture_onion@2x.png */; };
+		12EFC8291AD0D80F00A6A943 /* capture_onion_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC81F1AD0D80F00A6A943 /* capture_onion_selected@2x.png */; };
+		12EFC82A1AD0D80F00A6A943 /* capture_rec_base@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC8201AD0D80F00A6A943 /* capture_rec_base@2x.png */; };
+		12EFC82B1AD0D80F00A6A943 /* capture_rec_blink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC8211AD0D80F00A6A943 /* capture_rec_blink@2x.png */; };
+		12EFC82C1AD0D80F00A6A943 /* capture_rec_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12EFC8221AD0D80F00A6A943 /* capture_rec_off@2x.png */; };
 		2AA2E366F58DE5B734C7781F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D91E50440869E77308CDDAC5 /* libPods.a */; };
 		DFFB66721AC99AD7008350D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB66711AC99AD7008350D7 /* main.m */; };
 		DFFB66751AC99AD7008350D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFB66741AC99AD7008350D7 /* AppDelegate.m */; };
@@ -72,6 +85,22 @@
 		12EFC8091ACFDA1100A6A943 /* JDCloudData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCloudData.m; sourceTree = "<group>"; };
 		12EFC80B1ACFE05400A6A943 /* JDCloudTestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCloudTestor.h; sourceTree = "<group>"; };
 		12EFC80C1ACFE05400A6A943 /* JDCloudTestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCloudTestor.m; sourceTree = "<group>"; };
+		12EFC80F1AD0D80100A6A943 /* PBJFocusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJFocusView.h; sourceTree = "<group>"; };
+		12EFC8101AD0D80100A6A943 /* PBJFocusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJFocusView.m; sourceTree = "<group>"; };
+		12EFC8111AD0D80100A6A943 /* PBJStrobeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJStrobeView.h; sourceTree = "<group>"; };
+		12EFC8121AD0D80100A6A943 /* PBJStrobeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJStrobeView.m; sourceTree = "<group>"; };
+		12EFC8131AD0D80100A6A943 /* PBJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJViewController.h; sourceTree = "<group>"; };
+		12EFC8141AD0D80100A6A943 /* PBJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJViewController.m; sourceTree = "<group>"; };
+		12EFC8191AD0D80F00A6A943 /* capture_done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_done@2x.png"; sourceTree = "<group>"; };
+		12EFC81A1AD0D80F00A6A943 /* capture_flip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_flip@2x.png"; sourceTree = "<group>"; };
+		12EFC81B1AD0D80F00A6A943 /* capture_focus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_focus@2x.png"; sourceTree = "<group>"; };
+		12EFC81C1AD0D80F00A6A943 /* capture_focus_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_focus_button@2x.png"; sourceTree = "<group>"; };
+		12EFC81D1AD0D80F00A6A943 /* capture_focus_button_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_focus_button_active@2x.png"; sourceTree = "<group>"; };
+		12EFC81E1AD0D80F00A6A943 /* capture_onion@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_onion@2x.png"; sourceTree = "<group>"; };
+		12EFC81F1AD0D80F00A6A943 /* capture_onion_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_onion_selected@2x.png"; sourceTree = "<group>"; };
+		12EFC8201AD0D80F00A6A943 /* capture_rec_base@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_rec_base@2x.png"; sourceTree = "<group>"; };
+		12EFC8211AD0D80F00A6A943 /* capture_rec_blink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_rec_blink@2x.png"; sourceTree = "<group>"; };
+		12EFC8221AD0D80F00A6A943 /* capture_rec_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_rec_off@2x.png"; sourceTree = "<group>"; };
 		65FAA7E66C349A6F343B6585 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D55135DD8BAD0950C7B94B22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D91E50440869E77308CDDAC5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +194,37 @@
 			path = "cloud storege";
 			sourceTree = "<group>";
 		};
+		12EFC80E1AD0D80100A6A943 /* video maker */ = {
+			isa = PBXGroup;
+			children = (
+				12EFC80F1AD0D80100A6A943 /* PBJFocusView.h */,
+				12EFC8101AD0D80100A6A943 /* PBJFocusView.m */,
+				12EFC8111AD0D80100A6A943 /* PBJStrobeView.h */,
+				12EFC8121AD0D80100A6A943 /* PBJStrobeView.m */,
+				12EFC8131AD0D80100A6A943 /* PBJViewController.h */,
+				12EFC8141AD0D80100A6A943 /* PBJViewController.m */,
+			);
+			name = "video maker";
+			path = "QNVideoDemo/video maker";
+			sourceTree = SOURCE_ROOT;
+		};
+		12EFC8181AD0D80F00A6A943 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				12EFC8191AD0D80F00A6A943 /* capture_done@2x.png */,
+				12EFC81A1AD0D80F00A6A943 /* capture_flip@2x.png */,
+				12EFC81B1AD0D80F00A6A943 /* capture_focus@2x.png */,
+				12EFC81C1AD0D80F00A6A943 /* capture_focus_button@2x.png */,
+				12EFC81D1AD0D80F00A6A943 /* capture_focus_button_active@2x.png */,
+				12EFC81E1AD0D80F00A6A943 /* capture_onion@2x.png */,
+				12EFC81F1AD0D80F00A6A943 /* capture_onion_selected@2x.png */,
+				12EFC8201AD0D80F00A6A943 /* capture_rec_base@2x.png */,
+				12EFC8211AD0D80F00A6A943 /* capture_rec_blink@2x.png */,
+				12EFC8221AD0D80F00A6A943 /* capture_rec_off@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		703187CE062F1F1196011764 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +260,8 @@
 			children = (
 				1280CFFF1ACF8F7500CE8C70 /* cloud storege */,
 				1280CFF51ACF8DFC00CE8C70 /* video */,
+				12EFC80E1AD0D80100A6A943 /* video maker */,
+				12EFC8181AD0D80F00A6A943 /* images */,
 				DFFB66731AC99AD7008350D7 /* AppDelegate.h */,
 				DFFB66741AC99AD7008350D7 /* AppDelegate.m */,
 				DFFB66761AC99AD7008350D7 /* ViewController.h */,
@@ -329,8 +391,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12EFC8271AD0D80F00A6A943 /* capture_focus_button_active@2x.png in Resources */,
+				12EFC82B1AD0D80F00A6A943 /* capture_rec_blink@2x.png in Resources */,
+				12EFC82C1AD0D80F00A6A943 /* capture_rec_off@2x.png in Resources */,
+				12EFC8251AD0D80F00A6A943 /* capture_focus@2x.png in Resources */,
+				12EFC8291AD0D80F00A6A943 /* capture_onion_selected@2x.png in Resources */,
 				DFFB667B1AC99AD7008350D7 /* Main.storyboard in Resources */,
+				12EFC8261AD0D80F00A6A943 /* capture_focus_button@2x.png in Resources */,
+				12EFC8231AD0D80F00A6A943 /* capture_done@2x.png in Resources */,
+				12EFC8241AD0D80F00A6A943 /* capture_flip@2x.png in Resources */,
+				12EFC8281AD0D80F00A6A943 /* capture_onion@2x.png in Resources */,
 				DFFB66801AC99AD7008350D7 /* LaunchScreen.xib in Resources */,
+				12EFC82A1AD0D80F00A6A943 /* capture_rec_base@2x.png in Resources */,
 				DFFB667D1AC99AD7008350D7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,11 +459,14 @@
 				12EFC8041ACFCDC000A6A943 /* JDVideoInfo.m in Sources */,
 				DFFB66751AC99AD7008350D7 /* AppDelegate.m in Sources */,
 				1280D0021ACF8FD300CE8C70 /* JDCloudService.m in Sources */,
+				12EFC8161AD0D80100A6A943 /* PBJStrobeView.m in Sources */,
 				1280CFFE1ACF8F3F00CE8C70 /* JDVideoDownloader.m in Sources */,
 				DFFB66721AC99AD7008350D7 /* main.m in Sources */,
 				1280D0081ACF923A00CE8C70 /* JDCloudResource.m in Sources */,
+				12EFC8171AD0D80100A6A943 /* PBJViewController.m in Sources */,
 				12EFC80D1ACFE05400A6A943 /* JDCloudTestor.m in Sources */,
 				1280CFF81ACF8E5C00CE8C70 /* JDVideoUtil.m in Sources */,
+				12EFC8151AD0D80100A6A943 /* PBJFocusView.m in Sources */,
 				12EFC8011ACFCB8600A6A943 /* JDVideoSource.m in Sources */,
 				1280CFFB1ACF8E8200CE8C70 /* JDVidoUploader.m in Sources */,
 				12EFC80A1ACFDA1100A6A943 /* JDCloudData.m in Sources */,

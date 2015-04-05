@@ -14,6 +14,7 @@
 
 @property (nonatomic,strong) JDCloudResource *cloudResource;
 @property (nonatomic,strong) NSData *data;
+@property (nonatomic,copy)   NSString *filePath;
 @property (nonatomic,strong) NSString *contentType;
 
 
