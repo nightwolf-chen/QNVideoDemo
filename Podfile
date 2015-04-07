@@ -1,3 +1,4 @@
-pod "Qiniu", "~> 7.0"
-
 pod 'PBJVision'
+pod 'SVProgressHUD', :head
+pod 'SVPullToRefresh', :head
+pod 'AFNetworking', :head

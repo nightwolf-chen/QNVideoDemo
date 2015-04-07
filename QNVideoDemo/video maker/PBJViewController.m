@@ -659,6 +659,11 @@
 {
     _recording = NO;
 
+    [_delegate pbj_viewController:self
+                    capturedVideo:videoDict
+                            error:error];
+    
+    [self dismissViewControllerAnimated:YES completion:^{}];
     
     if (error && [error.domain isEqual:PBJVisionErrorDomain] && error.code == PBJVisionErrorCancelled) {
         NSLog(@"recording session cancelled");
@@ -668,13 +673,9 @@
         return;
     }
 
+    
     _currentVideo = videoDict;
-    
-    [_delegate pbj_viewController:self
-                    capturedVideo:videoDict
-                            error:error];
-    
-    [self dismissViewControllerAnimated:YES completion:^{}];
+   
 //    NSString *videoPath = [_currentVideo  objectForKey:PBJVisionVideoPathKey];
 //    
 //    NSLog(@"video path: %@",videoPath);

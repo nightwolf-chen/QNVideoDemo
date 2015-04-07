@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Qiniu.xcscheme</key>
+		<key>Pods-SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SCRecorder.xcscheme</key>
+		<key>Pods-SVPullToRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0935F128FC9C720E11C61875</key>
+		<key>0EB688CEE4C1517F68EA26F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3DFB15EA80A9B5EF6CFC9021</key>
+		<key>894AB6EFD9E61821192F0EB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>605C9971141F7DC61E08594C</key>
+		<key>D38795BDEBC1639F1112C127</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AAD2710E27592997F37A71A9</key>
+		<key>EB2810D3D898A76A7C442054</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB8F184B6F77642F7DBD22FD</key>
+		<key>EB5922DF8FA59EAAECF55652</key>
 		<dict>
 			<key>primary</key>
 			<true/>
